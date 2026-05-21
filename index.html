@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Jain Weffies — Premium Waffle Restaurant</title>
+  <meta name="description" content="Jain Weffies — Crispy outside, fluffy inside, always delicious. Order the best waffles in town for dine-in or delivery. WhatsApp ordering available!"/>
+  <meta name="keywords" content="Jain Weffies, waffle restaurant, best waffles, Nutella waffle, Belgian waffle, waffle milkshake, dessert cafe"/>
+  <meta property="og:title" content="Jain Weffies — Premium Waffles"/>
+  <meta property="og:description" content="Order fresh, golden waffles from Jain Weffies. Dine-in, pickup, or WhatsApp delivery."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="https://images.pexels.com/photos/7440340/pexels-photo-7440340.jpeg?auto=compress&cs=tinysrgb&w=1200"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="#" class="nav-logo">🧇 Jain Weffies</a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://wa.me/91XXXXXXXXXX?text=Hello%20Jain%20Weffies%2C%20I%20want%20to%20place%20a%20waffle%20order." target="_blank" class="btn btn-primary nav-cta">Order on WhatsApp</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" id="mobileMenuClose">✕</button>
+  <a href="#home">Home</a>
+  <a href="#menu">Menu</a>
+  <a href="#about">About</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+  <a href="https://wa.me/91XXXXXXXXXX?text=Hello%20Jain%20Weffies%2C%20I%20want%20to%20place%20a%20waffle%20order." target="_blank">💬 Order on WhatsApp</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="particles"></div>
+  <div class="hero-content">
+    <h1>Jain Weffies</h1>
+    <p class="tagline">Crispy Outside &bull; Fluffy Inside &bull; Always Delicious</p>
+    <div class="hero-buttons">
+      <a href="https://wa.me/91XXXXXXXXXX?text=Hello%20Jain%20Weffies%2C%20I%20want%20to%20place%20a%20waffle%20order." target="_blank" class="btn btn-primary">💬 Order on WhatsApp</a>
+      <a href="#menu" class="btn btn-secondary">🍽️ View Our Menu</a>
+      <a href="https://maps.google.com" target="_blank" class="btn btn-secondary">📍 Visit Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MARQUEE BANNER ===== -->
+<div class="marquee-banner">
+  <div class="marquee-track">
+    <span>🧇 Weekend Special — Buy 2 Waffles Get 1 Free · Every Saturday & Sunday 🧇</span>
+    <span>🧇 Weekend Special — Buy 2 Waffles Get 1 Free · Every Saturday & Sunday 🧇</span>
+    <span>🧇 Weekend Special — Buy 2 Waffles Get 1 Free · Every Saturday & Sunday 🧇</span>
+    <span>🧇 Weekend Special — Buy 2 Waffles Get 1 Free · Every Saturday & Sunday 🧇</span>
+  </div>
+</div>
+
+<!-- Syrup Divider -->
+<div class="syrup-divider">
+  <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
+    <path d="M0,0 Q150,40 300,0 Q450,40 600,0 Q750,40 900,0 Q1050,40 1200,0 L1200,40 L0,40 Z" fill="var(--cream)"></path>
+  </svg>
+</div>
+
+<!-- ===== MENU ===== -->
+<section class="products" id="menu">
+  <div class="container">
+    <h2 class="section-title reveal">Our Waffle Menu</h2>
+    <p class="section-subtitle reveal">Handcrafted with premium Belgian batter, served warm and fresh.</p>
+    
+    <div class="menu-filters reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="classic">Classic Waffles</button>
+      <button class="filter-btn" data-filter="loaded">Loaded Waffles</button>
+      <button class="filter-btn" data-filter="savory">Savory Waffles</button>
+      <button class="filter-btn" data-filter="beverage">Beverages</button>
+      <button class="filter-btn" data-filter="kids">Kids Special</button>
+    </div>
+
+    <div class="products-grid">
+
+      <!-- Classic Waffles -->
+      <div class="product-card reveal" data-category="classic">
+        <div class="veg-badge" title="Vegetarian"></div>
+        <div class="product-image-wrap">
+          <img src="https://images.pexels.com/photos/6769481/pexels-photo-6769481.jpeg?auto=compress&cs=tinysrgb&w=600" loading="lazy" alt="Butter & Maple Waffle" class="product-image" />
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Butter & Maple Waffle</h3>
+          <p class="product-desc">Classic golden waffle with butter and maple syrup</p>
+          <div class="product-bottom">
+            <span class="product-price">₹149</span>
+            <a href="https://wa.me/91XXXXXXXXXX?text=Hi!%20I%20want%20to%20order%20Butter%20&%20Maple%20Waffle" target="_blank" class="product-order">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal" data-category="classic">
+        <div class="veg-badge" title="Vegetarian"></div>
+        <div class="product-image-wrap">
+          <img src="https://images.pexels.com/photos/28919126/pexels-photo-28919126.jpeg?auto=compress&cs=tinysrgb&w=600" loading="lazy" alt="Cinnamon Sugar Waffle" class="product-image" />
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Cinnamon Sugar Waffle</h3>
+          <p class="product-desc">Dusted with cinnamon sugar and whipped cream</p>
+          <div class="product-bottom">
+            <span class="product-price">₹159</span>
+            <a href="https://wa.me/91XXXXXXXXXX?text=Hi!%20I%20want%20to%20order%20Cinnamon%20Sugar%20Waffle" target="_blank" class="product-order">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal" data-category="classic">
+        <div class="veg-badge" title="Vegetarian"></div>
+        <div class="product-image-wrap">
+          <img src="https://images.pexels.com/photos/67024/pexels-photo-67024.jpeg?auto=compress&cs=tinysrgb&w=600" loading="lazy" alt="Plain Crispy Waffle" class="product-image" />
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Plain Crispy Waffle</h3>
+          <p class="product-desc">Light, airy, and perfectly golden</p>
+          <div class="product-bottom">
+            <span class="product-price">₹129</span>
+            <a href="https://wa.me/91XXXXXXXXXX?text=Hi!%20I%20want%20to%20order%20Plain%20Crispy%20Waffle" target="_blank" class="product-order">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Loaded Waffles -->
+      <div class="product-card reveal" data-category="loaded">
+        <div class="product-badge badge-bestseller">⭐ Best Seller</div>
+        <div class="veg-badge" title="Vegetarian"></div>
+        <div class="product-image-wrap">
+          <img src="https://images.pexels.com/photos/35054718/pexels-photo-35054718.jpeg?auto=compress&cs=tinysrgb&w=600" loading="lazy" alt="Nutella Overload" class="product-image" />
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Nutella Overload</h3>
+          <p class="product-desc">Smothered in Nutella, banana slices, and crushed nuts</p>
+          <div class="product-bottom">
+            <span class="product-price">₹199</span>
+            <a href="https://wa.me/91XXXXXXXXXX?text=Hi!%20I%20want%20to%20order%20Nutella%20Overload" target="_blank" class="product-order">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal" data-category="loaded">
+        <div class="veg-badge" title="Vegetarian"></div>
+        <div class="product-image-wrap">
+          <img src="https://images.pexels.com/photos/28919125/pexels-photo-28919125.jpeg?auto=compress&cs=tinysrgb&w=600" loading="lazy" alt="Berry Blast Waffle" class="product-image" />
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Berry Blast Waffle</h3>
+          <p class="product-desc">Fresh strawberries, blueberries, and cream cheese drizzle</p>
+          <div class="product-bottom">
+            <span class="product-price">₹189</span>
+            <a href="https://wa.me/91XXXXXXXXXX?text=Hi!%20I%20want%20to%20order%20Berry%20Blast%20Waffle" target="_blank" class="product-order">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal" data-category="loaded">
+        <div class="product-badge badge-special">✨ Chef's Special</div>
+        <div class="veg-badge" title="Vegetarian"></div>
+        <div class="product-image-wrap">
+          <img src="https://images.pexels.com/photos/34964947/pexels-photo-34964947.jpeg?auto=compress&cs=tinysrgb&w=600" loading="lazy" alt="Choco Lava Waffle" class="product-image" />
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Choco Lava Waffle</h3>
+          <p class="product-desc">Warm chocolate sauce, brownie chunks, and vanilla ice cream</p>
+          <div class="product-bottom">
+            <span class="product-price">₹219</span>
+            <a href="https://wa.me/91XXXXXXXXXX?text=Hi!%20I%20want%20to%20order%20Choco%20Lava%20Waffle" target="_blank" class="product-order">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal" data-category="loaded">
+        <div class="veg-badge" title="Vegetarian"></div>
+        <div class="product-image-wrap">
+          <img src="https://images.pexels.com/photos/20081528/pexels-photo-20081528.jpeg?auto=compress&cs=tinysrgb&w=600" loading="lazy" alt="Lotus Biscoff Waffle" class="product-image" />
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Lotus Biscoff Waffle</h3>
+          <p class="product-desc">Biscoff spread, caramel drizzle, and cookie crumble</p>
+          <div class="product-bottom">
+            <span class="product-price">₹209</span>
+            <a href="https://wa.me/91XXXXXXXXXX?text=Hi!%20I%20want%20to%20order%20Lotus%20Biscoff%20Waffle" target="_blank" class="product-order">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Savory Waffles -->
+      <div class="product-card reveal" data-category="savory">
+        <div class="veg-badge" title="Vegetarian"></div>
+        <div class="product-image-wrap">
+          <img src="https://images.pexels.com/photos/5639336/pexels-photo-5639336.jpeg?auto=compress&cs=tinysrgb&w=600" loading="lazy" alt="Cheese & Herb Waffle" class="product-image" />
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Cheese & Herb Waffle</h3>
+          <p class="product-desc">Mozzarella, oregano, and garlic butter</p>
+          <div class="product-bottom">
+            <span class="product-price">₹179</span>
+            <a href="https://wa.me/91XXXXXXXXXX?text=Hi!%20I%20want%20to%20order%20Cheese%20&%20Herb%20Waffle" target="_blank" class="product-order">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal" data-category="savory">
+        <div class="veg-badge" title="Vegetarian"></div>
+        <div class="product-image-wrap">
+          <img src="https://images.pexels.com/photos/33430558/pexels-photo-33430558.jpeg?auto=compress&cs=tinysrgb&w=600" loading="lazy" alt="Paneer Tikka Waffle" class="product-image" />
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Paneer Tikka Waffle</h3>
+          <p class="product-desc">Spiced paneer, mint chutney, and onion</p>
+          <div class="product-bottom">
+            <span class="product-price">₹189</span>
+            <a href="https://wa.me/91XXXXXXXXXX?text=Hi!%20I%20want%20to%20order%20Paneer%20Tikka%20Waffle" target="_blank" class="product-order">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Beverages -->
+      <div class="product-card reveal" data-category="beverage">
+        <div class="veg-badge" title="Vegetarian"></div>
+        <div class="product-image-wrap">
+          <img src="https://images.pexels.com/photos/35210027/pexels-photo-35210027.jpeg?auto=compress&cs=tinysrgb&w=600" loading="lazy" alt="Belgian Hot Chocolate" class="product-image" />
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Belgian Hot Chocolate</h3>
+          <p class="product-desc">Rich, thick, and indulgent</p>
+          <div class="product-bottom">
+            <span class="product-price">₹99</span>
+            <a href="https://wa.me/91XXXXXXXXXX?text=Hi!%20I%20want%20to%20order%20Belgian%20Hot%20Chocolate" target="_blank" class="product-order">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal" data-category="beverage">
+        <div class="veg-badge" title="Vegetarian"></div>
+        <div class="product-image-wrap">
+          <img src="https://images.pexels.com/photos/35545934/pexels-photo-35545934.jpeg?auto=compress&cs=tinysrgb&w=600" loading="lazy" alt="Waffle Milkshake" class="product-image" />
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Waffle Milkshake</h3>
+          <p class="product-desc">Vanilla or chocolate blended with waffle pieces</p>
+          <div class="product-bottom">
+            <span class="product-price">₹149</span>
+            <a href="https://wa.me/91XXXXXXXXXX?text=Hi!%20I%20want%20to%20order%20Waffle%20Milkshake" target="_blank" class="product-order">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal" data-category="beverage">
+        <div class="veg-badge" title="Vegetarian"></div>
+        <div class="product-image-wrap">
+          <img src="https://images.pexels.com/photos/4869290/pexels-photo-4869290.jpeg?auto=compress&cs=tinysrgb&w=600" loading="lazy" alt="Cold Coffee" class="product-image" />
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Cold Coffee</h3>
+          <p class="product-desc">Strong, creamy, and perfectly sweetened</p>
+          <div class="product-bottom">
+            <span class="product-price">₹119</span>
+            <a href="https://wa.me/91XXXXXXXXXX?text=Hi!%20I%20want%20to%20order%20Cold%20Coffee" target="_blank" class="product-order">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kids Special -->
+      <div class="product-card reveal" data-category="kids">
+        <div class="veg-badge" title="Vegetarian"></div>
+        <div class="product-image-wrap">
+          <img src="https://images.pexels.com/photos/5848187/pexels-photo-5848187.jpeg?auto=compress&cs=tinysrgb&w=600" loading="lazy" alt="Mini Waffle Bites" class="product-image" />
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Mini Waffle Bites</h3>
+          <p class="product-desc">Bite-sized waffles with dipping sauces</p>
+          <div class="product-bottom">
+            <span class="product-price">₹99</span>
+            <a href="https://wa.me/91XXXXXXXXXX?text=Hi!%20I%20want%20to%20order%20Mini%20Waffle%20Bites" target="_blank" class="product-order">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal" data-category="kids">
+        <div class="veg-badge" title="Vegetarian"></div>
+        <div class="product-image-wrap">
+          <img src="https://images.pexels.com/photos/28308017/pexels-photo-28308017.jpeg?auto=compress&cs=tinysrgb&w=600" loading="lazy" alt="Rainbow Waffle" class="product-image" />
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Rainbow Waffle</h3>
+          <p class="product-desc">Colorful sprinkles, strawberry sauce, and whipped cream</p>
+          <div class="product-bottom">
+            <span class="product-price">₹139</span>
+            <a href="https://wa.me/91XXXXXXXXXX?text=Hi!%20I%20want%20to%20order%20Rainbow%20Waffle" target="_blank" class="product-order">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image reveal-left">
+        <img src="https://images.pexels.com/photos/16975238/pexels-photo-16975238.jpeg?auto=compress&cs=tinysrgb&w=800" alt="About Jain Weffies" loading="lazy"/>
+      </div>
+      <div class="about-text reveal-right">
+        <h2>Hand-crafted With Passion</h2>
+        <p>At Jain Weffies, we believe every waffle should be an experience. From our authentic Belgian batter recipe to our carefully selected premium toppings, we pour our heart into creating desserts that bring a smile to your face.</p>
+        <p>Our open kitchen allows you to see the magic happen right before your eyes. We maintain the highest hygiene standards because your health and happiness mean the world to us. Join us for a sweet escape in our cozy cafe!</p>
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="icon">🧇</div>
+            <h4>Belgian Batter Recipe</h4>
+          </div>
+          <div class="about-feature">
+            <div class="icon">🧼</div>
+            <h4>Hygienic Open Kitchen</h4>
+          </div>
+          <div class="about-feature">
+            <div class="icon">❤️</div>
+            <h4>Made With Love</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <h2 class="section-title reveal">Our Waffle Gallery</h2>
+    <p class="section-subtitle reveal">A glimpse into our sweet world of golden waffles and cozy moments.</p>
+    <div class="gallery-grid">
+      <div class="gallery-item reveal"><img src="https://images.pexels.com/photos/28919127/pexels-photo-28919127.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Gallery Image 1" loading="lazy"/></div>
+      <div class="gallery-item reveal"><img src="https://images.pexels.com/photos/29156026/pexels-photo-29156026.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Gallery Image 2" loading="lazy"/></div>
+      <div class="gallery-item reveal"><img src="https://images.pexels.com/photos/28919130/pexels-photo-28919130.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Gallery Image 3" loading="lazy"/></div>
+      <div class="gallery-item reveal"><img src="https://images.pexels.com/photos/9501440/pexels-photo-9501440.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Gallery Image 4" loading="lazy"/></div>
+      <div class="gallery-item reveal"><img src="https://images.pexels.com/photos/35271843/pexels-photo-35271843.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Gallery Image 5" loading="lazy"/></div>
+      <div class="gallery-item reveal"><img src="https://images.pexels.com/photos/34964922/pexels-photo-34964922.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Gallery Image 6" loading="lazy"/></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <h2 class="section-title reveal">Customer Love</h2>
+    <p class="section-subtitle reveal">What our lovely guests have to say about their sweet experiences.</p>
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <div class="review-header">
+          <div class="review-avatar">P</div>
+          <div><div class="review-name">Priya S.</div><div class="review-stars">⭐⭐⭐⭐⭐</div></div>
+        </div>
+        <p class="review-text">"The Nutella Overload waffle is literally heaven. Best in the city!"</p>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-header">
+          <div class="review-avatar">R</div>
+          <div><div class="review-name">Rohan M.</div><div class="review-stars">⭐⭐⭐⭐⭐</div></div>
+        </div>
+        <p class="review-text">"Crispy outside, super fluffy inside. Loved the Choco Lava!"</p>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-header">
+          <div class="review-avatar">S</div>
+          <div><div class="review-name">Sneha K.</div><div class="review-stars">⭐⭐⭐⭐⭐</div></div>
+        </div>
+        <p class="review-text">"Great ambiance, amazing waffles, and very hygienic place."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact">
+  <div class="container">
+    <h2 class="section-title reveal">Visit Us</h2>
+    <p class="section-subtitle reveal">Come for the waffles, stay for the cozy vibes.</p>
+    <div class="contact-grid">
+      <div class="reveal-left">
+        <div class="contact-info">
+          <h3>Contact & Location</h3>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div><h4>Phone</h4><p>+91 XXXXXXXXXX</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">💬</div>
+            <div><h4>WhatsApp</h4><p>+91 XXXXXXXXXX</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div><h4>Address</h4><p>Shop No. 12, High Street Cafe Lane,<br/>Your City, State — XXXXXX</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div><h4>Business Hours</h4><p>Monday to Friday: 11:00 AM – 10:00 PM<br/>Saturday & Sunday: 10:00 AM – 11:00 PM</p></div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group"><input type="text" id="formName" placeholder="Your Name" required/></div>
+          <div class="form-group"><input type="tel" id="formPhone" placeholder="Phone Number" required/></div>
+          <div class="form-group"><textarea id="formMessage" placeholder="Your Message or Inquiry" required></textarea></div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+      <div class="contact-map reveal-right">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.0!2d72.8!3d21.17!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDEwJzEyLjAiTiA3MsKwNDgnMDAuMCJF!5e0!3m2!1sen!2sin!4v1" allowfullscreen="" loading="lazy" title="Jain Weffies Location"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INSTAGRAM ===== -->
+<section class="instagram" id="instagram">
+  <div class="container">
+    <h2 class="section-title reveal">Follow our waffle journey on Instagram</h2>
+    <p class="section-subtitle reveal">Tag us in your delicious moments!</p>
+    <div class="insta-grid">
+      <div class="insta-item reveal"><img src="https://images.pexels.com/photos/9101614/pexels-photo-9101614.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Insta 1" loading="lazy"/></div>
+      <div class="insta-item reveal"><img src="https://images.pexels.com/photos/34390522/pexels-photo-34390522.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Insta 2" loading="lazy"/></div>
+      <div class="insta-item reveal"><img src="https://images.pexels.com/photos/28308018/pexels-photo-28308018.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Insta 3" loading="lazy"/></div>
+      <div class="insta-item reveal"><img src="https://images.pexels.com/photos/34902505/pexels-photo-34902505.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Insta 4" loading="lazy"/></div>
+      <div class="insta-item reveal"><img src="https://images.pexels.com/photos/9251207/pexels-photo-9251207.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Insta 5" loading="lazy"/></div>
+      <div class="insta-item reveal"><img src="https://images.pexels.com/photos/131056/pexels-photo-131056.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Insta 6" loading="lazy"/></div>
+    </div>
+    <a href="https://instagram.com/jainweffies" target="_blank" class="btn btn-primary" style="margin-top:8px;">📷 Follow on Instagram @jainweffies</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="footer-logo">🧇 Jain Weffies</a>
+        <p>Crispy Outside &bull; Fluffy Inside &bull; Always Delicious</p>
+        <p style="margin-top:8px">Bringing you the finest Belgian waffles, crafted with love and served warm. Your new favorite dessert cafe!</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/jainweffies" target="_blank" title="Instagram">📷</a>
+          <a href="https://facebook.com/jainweffies" target="_blank" title="Facebook">📘</a>
+          <a href="https://wa.me/91XXXXXXXXXX" target="_blank" title="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#menu">Our Menu</a>
+          <a href="#about">About Us</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div>
+        <h4>Popular Waffles</h4>
+        <div class="footer-links">
+          <a href="https://wa.me/91XXXXXXXXXX?text=Hi!%20I%20want%20to%20order%20Nutella%20Overload" target="_blank">Nutella Overload</a>
+          <a href="https://wa.me/91XXXXXXXXXX?text=Hi!%20I%20want%20to%20order%20Choco%20Lava%20Waffle" target="_blank">Choco Lava Waffle</a>
+          <a href="https://wa.me/91XXXXXXXXXX?text=Hi!%20I%20want%20to%20order%20Berry%20Blast%20Waffle" target="_blank">Berry Blast Waffle</a>
+          <a href="https://wa.me/91XXXXXXXXXX?text=Hi!%20I%20want%20to%20order%20Cheese%20&%20Herb%20Waffle" target="_blank">Cheese & Herb Waffle</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Jain Weffies. All rights reserved. Sweet cravings satisfied.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== WHATSAPP FLOATING BUTTON ===== -->
+<a href="https://wa.me/91XXXXXXXXXX?text=Hello%20Jain%20Weffies%2C%20I%20want%20to%20place%20a%20waffle%20order." target="_blank" class="whatsapp-float" title="Order on WhatsApp">💬</a>
+
+<!-- ===== SCROLL TO TOP ===== -->
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+<!-- ===== FESTIVAL POPUP ===== -->
+<div class="popup-overlay" id="popupOverlay">
+  <div class="popup">
+    <button class="popup-close" id="popupClose">✕</button>
+    <div class="emoji">🧇</div>
+    <h3>Weekend Special!</h3>
+    <p>Buy 2 Waffles, Get 1 Free!</p>
+    <div class="code">WAFFLELOVE</div>
+    <p style="font-size:0.85rem;color:var(--text-light);">Valid every Saturday & Sunday. Show this code or use it on WhatsApp.</p>
+    <a href="https://wa.me/91XXXXXXXXXX?text=Hi!%20I%20want%20to%20use%20code%20WAFFLELOVE%20for%20my%20order." target="_blank" class="btn btn-primary" style="margin-top:16px;width:100%;justify-content:center;">Claim Offer on WhatsApp</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

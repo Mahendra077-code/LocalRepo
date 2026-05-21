@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jainweffies.com/sitemap.xml
